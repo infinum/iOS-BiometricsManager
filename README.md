@@ -8,11 +8,9 @@
     <img src="./Locker-github.jpg" width="700" max-width="50%" alt="Locker"/>
 </p>
 
-
+## Description
 
 Lightweight library for handling sensitive data (`String` type) in Keychain using iOS Biometric features.
-
-## Features
 
   * Save data in Keychain.
   * Fetch data from Keychain with Biometric ID.
@@ -23,11 +21,23 @@ Lightweight library for handling sensitive data (`String` type) in Keychain usin
   * Detect and supports Simulator.
   * Update the supported devices list without updating the library
 
+Locker does not collect any user data. We have provided a [privacy manifest](https://github.com/infinum/Locker/blob/master/Sources/Locker/SupportingFiles/PrivacyInfo.xcprivacy) file that can be included in your app.
+
+## Table of contents
+
+* [Requirements](#requirements)
+* [Getting started](#getting-started)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [License](#license)
+* [Credits](#credits)
+
+
 ## Requirements
 
 - iOS 10.0 +
 
-## Installation
+## Getting started
 
 Locker supports CocoaPods, Swift Package Manager and Carthage.
 
@@ -190,11 +200,46 @@ if biometrySettingsChanged && usingBiometry {
 #### 8. There is a local JSON file that contains every iPhone and iPad model which has FaceID or TouchID. That way we can check if the user's device can use FaceID or TouchID. If you want to allow the JSON file to sync itself with a server, you can set `enableDeviceListSync` to `true`.
 `enableDeviceListSync` when enabled, if the device is not present on the local list, it syncs the list with a list from the server and writes it down to the local JSON file.
 
-## Privacy
-
-Locker does not collect any user data. We have provided a [privacy manifest](https://github.com/infinum/Locker/blob/master/Sources/Locker/SupportingFiles/PrivacyInfo.xcprivacy) file that can be included in your app.
 
 ## Contributing
 
 Feedback and code contributions are very much welcome. Just make a pull request with a short description of your changes. By making contributions to this project you give permission for your code to be used under the same [license](https://github.com/infinum/Locker/blob/master/LICENSE).
 
+## License
+
+```text
+MIT License
+
+Copyright (c) 2024 Infinum
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## Credits
+
+Maintained and sponsored by [Infinum](https://infinum.com).
+
+<div align="center">
+    <a href='https://infinum.com'>
+    <picture>
+        <source srcset="https://assets.infinum.com/brand/logo/static/white.svg" media="(prefers-color-scheme: dark)">
+        <img src="https://assets.infinum.com/brand/logo/static/default.svg">
+    </picture>
+    </a>
+</div>
